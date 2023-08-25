@@ -1,0 +1,32 @@
+.general-info-show {
+    background-color: rgb(0, 88, 98);
+    color: white;
+    width: 100%;
+    padding: 36px 24px; 
+  }
+  
+  .resume-name {
+    text-align: center;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin: auto;
+    width: fit-content;
+  }
+  
+  .resume.top .contact-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .contact-info > div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
