@@ -1,5 +1,6 @@
 import '../styles/expand-section.css'
 import PropTypes from 'prop-types'
+import arrowImg from '../assets/arrow.png'
 
 export function ExpandSection({ isOpen, setOpen, sectionName, iconName }) {
   return (
@@ -11,7 +12,7 @@ export function ExpandSection({ isOpen, setOpen, sectionName, iconName }) {
         <i className={`${iconName}`} />
         {sectionName}
       </h2>
-      <img src="../public/arrow.png" className={`fa-solid fa-chevron-up chevron ${isOpen ? "open" : ""}`} />
+      <img src={arrowImg} className={`fa-solid fa-chevron-up chevron ${isOpen ? "open" : ""}`} />
     </button>
   );
 }
