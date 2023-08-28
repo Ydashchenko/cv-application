@@ -1,5 +1,6 @@
 import { EducationData } from "./education-data";
 import { DisplaySection } from "./display-section";
+import PropTypes from 'prop-types'
 
 export function EducationShow({ educations }) {
   return (
@@ -11,4 +12,8 @@ export function EducationShow({ educations }) {
       />
     </div>
   );
+}
+
+EducationShow.propTypes = {
+  educations: PropTypes.object
 }

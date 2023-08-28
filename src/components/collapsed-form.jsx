@@ -1,5 +1,7 @@
 import '../styles/collapsed-form.css'
 import PropTypes from 'prop-types'
+import hiddenImg from '../assets/hidden.png'
+import notHiddenImg from '../assets/notHidden.png'
 
 export function CollapsedForm(props) {
   const { onClick, hideForm, title, arrayName } = props;
@@ -13,7 +15,7 @@ export function CollapsedForm(props) {
     >
       <p className="collapsed-form-title">{title}</p>
       <img
-        src={isHidden ? "../public/hidden.png" : "../public/notHidden.png"}
+        src={isHidden ? hiddenImg : notHiddenImg}
         className={`fa-regular ${isHidden ? "fa-eye-slash" : "fa-eye"} eye`}
         onClick={(e) => {
           e.stopPropagation();

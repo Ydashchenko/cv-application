@@ -1,5 +1,8 @@
 import '../styles/general-info-show.css'
 import PropTypes from 'prop-types'
+import addressImg from '../assets/address.png'
+import gmailImg from '../assets/gmail.png'
+import phoneImg from '../assets/phone.png'
 
 export function GeneralInfoShow({ fullName, eMail, phoneNumber, address }) {
   return (
@@ -8,21 +11,21 @@ export function GeneralInfoShow({ fullName, eMail, phoneNumber, address }) {
       <div className="contact-info">
         {eMail && (
           <div>
-            <img  src='../public/gmail.png' className="fa-solid fa-envelope" />
+            <img  src={gmailImg} className="fa-solid fa-envelope" />
             <span>{eMail}</span>
           </div>
         )}
 
         {phoneNumber && (
           <div>
-            <img src='../public/phone.png' className="fa-solid fa-phone" />
+            <img src={phoneImg} className="fa-solid fa-phone" />
             <span>{phoneNumber}</span>
           </div>
         )}
 
         {address && (
           <div>
-            <img src='../public/address.png' className="fa-solid fa-location-dot" />
+            <img src={addressImg} className="fa-solid fa-location-dot" />
             <span>{address}</span>
           </div>
         )}
